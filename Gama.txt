@@ -101,7 +101,7 @@ git push heroku master
 06-08
 Banco de Dados
 brmodelo => Sourceforge.net montar estrutura BD
-mySQL community root Senha@123 => montar BD SQL
+mySQL community root Senha => montar BD SQL
 
 07-08
 Desenvolvimento WEB1
