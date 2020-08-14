@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itau Unibanco - Agendamento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/agendamento.js"></script>
+</head>
+
+<body onload="carregarAgencias()">
+    <div id="wrapper">
+        <div id="header-wrapper">
+
+            <div id="header" class="container">
+
+                <div id="logo">
+                    <h1>
+                        <a href="www.itau.com.br"><img src="images/itau.png" width="20%" height="20%"></a>
+                    </h1>
+                </div>
+
+                <div id="formulario">
+                    <h1>
+                        <p style="color:cornsilk"><b>Formulário de Agendamento</b></p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+
+            <form class="ali">
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Nome Completo:</label> <input id="txtNome" type="text" class="form-control" maxlength="100" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Email:</label> <input id="txtEmail" type="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Celular/WhatsApp:</label> <input id="txtCelular" type="text" class="form-control" placeholder="99 99999-9999" aria-label="Username" aria-describedby="basic-addon1">
+
+                </div>
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Data:</label> <input id="txtData" type="date" class="form-control" placeholder="dd/mm/yyyy" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Horário:</label> <input id="txtHora" type="text" class="form-control" placeholder="hh:mm" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Observação:</label> <textarea id="txtObservacao" class="form-control" aria-label="With textarea"></textarea>
+                </div>
+
+                <div class="col-12">
+
+                    <label for="nm" class="labelj">Selecione a Agência:</label>
+                    <div class="input-group-prepend">
+
+                        <select name="agenciaId" class="custom-select" id="cmbAgencias"></select>
+                    </div>
+                </div>
+                <br>
+
+                <div style="text-align: center;">
+                    <button onclick="agendar()" type="button" class="btn btn-primary btn-lg">Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

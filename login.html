@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itau Unibanco - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header-wrapper">
+
+            <div id="header" class="container">
+
+                <div id="logo">
+                    <h1>
+                        <a href="www.itau.com.br"><img src="images/itau.png" width="20%" height="20%"></a>
+                    </h1>
+                </div>               
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <form class="ali2">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h3 style="text-align: center">Login</h3>                       
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Usuário:</label> <input id="txtUsuario" type="text" class="form-control" placeholder="Racf/ Funcional" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="nm" class="labelj">Senha:</label> <input id="txtSenha" type="password" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <button onclick="logar()" type="button" class="btn btn-primary btn-lg">Entrar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

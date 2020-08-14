@@ -1,0 +1,205 @@
+https://github.com/humbertosousa/turma6c
+
+treinamento GAMMA Academy
+https://xpcorp.gama.academy/
+
+C:\Program Files\Java\jdk1.8.0_251\bin
+
+https://github.com/humbertosousa/turma6c
+
+Humberto Delgado de Souza
+27-07
+Java
+Letra maiusculo inicial é classe
+C:\Users\user?????\Desktop\Turma6c
+compilar
+.java => .class
+	javac Itau.java cria Itau.class
+executar
+	java Itau
+Variaveis: menor unidade de dado representado dentro de um sistema (minusculo)
+Boas práticas:
+nome tem que ter significado
+comecar com minuscula
+usar padrão camelCase ou underline
+
+Tipo:
+Alfanumerico (busca mais lenta) => String
+Numerico (busca mais rápida) => int ou double
+
+28-07
+conversão implicita = dado menor em um espaço maior
+byte < short < int < long
+conversão explicita (Cast) = dado maior em um espaço menor
+conversão de dados incompatíveis => Parse 
+Classes Wrappers
+exercicio 1, 3 e 4
+
+29-07
+Repetição 
+while
+do while
+for
+
+30-07
+Orientada a Objeto
+analise => projeto => programação
+pilares: 
+abstração: (analise) facilidade manutençao e reaproveitamento de codigo, classe instancia objetos	
+encapsulamento: metodos (public) manipula atributos (private)
+herança: classes dependentes
+polimorfismo: metodos com mesmo nome executando acoes diferentes (overload = mesma classe, overriding)
+
+
+Workspace > Projetos > Pacote > Classe
+
+Astah = monta diagrama de UML
+Eclipse = auxilia montagem codigo java 2020-03
+
+padrao DTO Data Transfer Object (designer pattern ou beans)
+todo atributo deve ser private
+todo atributo deve possuir um metodo GET (output) e SET (input)
+
+03-08
+é / tem : pergunta?
+é = herança
+tem = composição
+
+04-08
+Poliformismo
+teste de falhas
+collection framework => hierarquia de collections
+array list = index melhor input
+hash list = endereco memoria - não duplica dados melhor output
+JSON
+XML
+GIT-SCM.com => Git Bash
+github.com
+
+05-08
+Danilo Aparecido
+"torne-se um programador" canal youtube
+visual studio
+Jmeter - qtd de usuarios simultaneos
+Vagrant - montar VM (maquina virtual) imagem
+Git - deploy
+Doker - containers
+puppet - script de montagem de servidor (configuração)
+kubernets - ferramenta usada para automação e orquestração operações containers 
+SAAS = System As A Service
+
+heroku.com => emulador app web
+
+git add .
+git commit -m "mensagem"
+git push
+
+heroku login
+heroku git:remote -a nome_minha_app
+git push heroku master
+
+06-08
+Banco de Dados
+brmodelo => Sourceforge.net montar estrutura BD
+mySQL community root Senha@123 => montar BD SQL
+
+07-08
+Desenvolvimento WEB1
+Visual Studio Code
+CSS
+Externo arquivo
+Interno pagina
+Inline tag
+
+templated.co -site de templates para css
+developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements => elementos HTML
+getbootstrap.com => codificação bootstrap
+layoutit.com/build => 
+Grupo 3
+OLAERCIO ISRAEL MACHADO JUNIOR
+ADRIANA DOS SANTOS
+DANIEL DE FREITAS FONSECA
+RICARDO MASSARU OOSSAWA
+SABRINA YUMI ISOMOTO
+
+10-08
+html
+projeto web
+spring boot x framework (servidor de aplicação)
+htpps://maven.apache.org/
+https://start.spring.io/
+	spring developes tools
+	spring web
+	spring data jpa
+	mysql driver
+Generate
+
+Aplication Properties
+spring.datasource.url=jdbc:mysql://localhost:3306/bdfinal?useTimezone=true&serverTimezone=UTC
+spring.datasource.username=nononono
+spring.datasource.password=Senha@123
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+#exibir os comandos dql no console do eclipse
+spring.jpa.show_sql=true
+#monitor conexao com banco
+spring.datasource.testWhileidle=true
+#query manter conexao banco ativa
+sprint.datasource.validationQuery=select 1
+#o jpa criar/alterar tabelas no BD
+spring.jpa.hibernate.ddl-auto=update
+
+MODEL => VIEW => CONTROLLER
+entrada => altera => lança eventos
+DAO = Data Access Object 
+dentro do DAO => CRUD = create, read, update, delete
+
+no Git Bash - subir projeto para GITHUB
+https://github.com/oossawa/Turma6C
+git clone https://github.com/oossawa/Turma6C
+git clone 
+git commit -m "mensagem"
+git push
+
+11-08
+Projeto Final - Itau TechInsiders - Turma 6.pdf
+
+12-08
+Danilo
+CI CD
+https://github.com/Didox/turma5_itau_devops
+fork
+heroku criar aplicação
+deploy 
+deploy branch
+SAAS = system as a service
+
+Heroku Cli
+abrir cmd:
+
+instala o heroku cliente pelo link dele
+abre cmd e dá um heroku --version (para ver se instalou direito)
+heroku login -i
+informa email e senha do heroku
+git clone https://github.com/massaru1/validacpf
+cd turma5_itau_devops
+heroku git:remote -a itau-valida-cpf-oossawa
+git push heroku master
+​https://docs.oracle.com/javase/tutorial/essential/environment/env.html
+http://www.torneseumprogramador.com.br/aulas/integracao-continua
+https://www.jenkins.io/download/thank-you-downloading-windows-installer-stable
+C:\windows\system32\config\systemprofile\AppData\Local\Jenkins.jenkins\secrets\initialAdminPassword
+Jenkins
+usuario
+senha
+JenkinsWEB: http://localhost:8080/
+
+
+Pipeline
+BUILD => TDD => BDD 			=> DEV => QA => PROD
+setup=>testeunitarios=>behaviortest	=>	deploy1
+CI					=>	CD
+
+download node.js
+
+cd C:\Users\user\Desktop\testeheroku
+npm run tdd
